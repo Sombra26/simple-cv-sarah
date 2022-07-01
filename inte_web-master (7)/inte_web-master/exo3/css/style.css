@@ -1,0 +1,85 @@
+/* Sélectionner toutes les balises du DOM */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+body, li{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    height: 100vh;
+}
+
+a{
+    color: white;
+    margin: auto;
+}
+
+li:first-child{
+    background-color: green;
+}
+li:nth-child(2){
+    background-color: yellowgreen;
+}
+li:nth-child(2) + li{
+    background-color: red;
+}
+li:last-of-type{
+    background-color: black;
+}
+
+.bottom-right{
+    bottom: 0px;
+    right: 0px;
+}
+
+.bottom-left{
+    left: 0px;
+    bottom: 0px;
+}
+
+.top-right{
+    top: 0px;
+    right: 0px;
+}
+
+.top-left{
+    top: 0px;
+    left: 0px;
+}
+
+ul{
+    position: relative;
+    border: 10px solid blue;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    transition: all 1s ease-in-out;
+    background-image: url(../../exo1/img/issue-status-bar-actions.png);
+}
+ul.role{
+    transform: rotate(360deg);
+    width: 100vw;
+    height: 100vh;
+    filter: blur(50px);
+}
+
+li{
+    position: absolute;
+    transition: background 0.2s ease-in, font .3s ease-out, border-radius .5s ease-in-out;
+}
+
+li:hover, li:nth-child(2) + li:hover{
+    font-size: 30px;
+    background-color: purple;
+    border-radius: 0px;
+}

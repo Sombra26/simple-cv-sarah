@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exo2 : les positions</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!-- Créer un liste de 4 liens (1, 2, 3, 4) -->
+        <ul>
+            <!-- le texte est en blanc -->
+            <li class="bottom-left"><a href="">1</a></li> <!-- fond vert -->
+            <li class="bottom-right"><a href="">2</a></li> <!-- fond jaune -->
+            <li class="top-right"><a href="">3</a></li> <!-- fond rouge -->
+            <li class="top-left"><a href="">4</a></li> <!-- fond noir -->
+        </ul>
+
+        <script>
+            document.querySelector('ul').addEventListener('click', event => {
+                document.querySelector('ul').classList.add('role')
+
+                setTimeout(() => {
+                    document.querySelector('ul').classList.remove('role')
+                }, 1000);
+            })
+        </script>
+    </body>
+</html>

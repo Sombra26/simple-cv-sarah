@@ -1,0 +1,55 @@
+/* 
+    CSS selector
+    Technic to catch HTML tag in CSS
+*/
+
+/* Select HTML id */
+#site-name{
+    font-size: 30px;
+}
+
+/* Select HTML class */
+.purple-color{
+    color: purple;
+}
+.big-size{
+    font-size: 100px;
+}
+
+/* Select HTML tag */
+h1{
+    color: red;
+}
+
+h2{
+    color: green;
+}
+
+header p{
+    font-size: 10px;
+}
+
+/* Select next HTML tag */
+.purple-color + p{
+    background-color: grey;
+}
+
+/* Select by child node */
+nav ul li:nth-child(2){
+    border: 5px dotted yellow;
+}
+
+/* Change tag display */
+nav li{
+    display: inline-block;
+}
+/* Move last li ro the right */
+nav li:last-child{
+    position: absolute;
+    right: 0px;
+}
+
+/* Marges: padding/marging */
+footer{
+    border: 10px solid #e56;
+}
