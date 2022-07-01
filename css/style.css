@@ -1,33 +1,26 @@
 /* Centrer le texte de l'entête */
-header
-{
+header{
 text-align: center;
 } 
 
 /* Définir le format de la page */
-html,body
-{ 
+/* html,body{ 
     height:297mm; width:210mm;
-
     
-}
+} */
 
 /* couleur fond  */
 body{
     background-color: rgb(255, 255, 255);
+    
     }
 
-/* couleur texte */
-
-    .cyan-color{
-        color: cyan;
-    }
-
-    body {
-        margin: 0; /* pour éviter les marges */
+.max-width{
+    max-width: 750px;
+    margin: auto;
 }
-#global {
-        margin-left: auto;
-        margin-right: auto;
-        width: 150px;
-}
+
+
+
+/* récupérer la taille de l'écran et  */
+
